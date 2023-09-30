@@ -60,7 +60,6 @@ h1 {
 
 #menu li {
     margin-bottom: 1em;
-    padding: 0 1rem;
 }
 
 .active {
@@ -107,4 +106,44 @@ main {
 /* Footer */
 footer {
     background-color: aquamarine;
+}
+
+
+/* Media query: TABLETS & lager (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /*header*/
+    nav {
+        /*so it displays, not hidden and toggled anymore*/
+        display: block;
+        /*so it is positioned inside header*/
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        /*links in nav display in row, not column*/
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        /*push main content down to accomodate larger header*/
+        margin-top: 79px;
+    }
 }
