@@ -96,11 +96,16 @@ nav {
 
 /* Main content*/
 main {
-    background-color: cadetblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     /*pushes content down, due to the fixed nav header*/
     margin-top: 47px;
+}
+
+/* Hero styles*/
+#hero {
+    height: 600px;
+    width: 100%;
 }
 
 /* Footer */
