@@ -104,8 +104,20 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: aquamarine;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/* icons are set inside i elements by fontawesome*/
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 
