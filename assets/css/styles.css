@@ -29,6 +29,11 @@ h3 {
     color: #252525;
 }
 
+/*hide elements to users, because it does not look good, BUT still there for seach engines, SEO improvement*/
+.hidden-heading {
+    display: none;
+}
+
 /* Header*/
 header {
     background-color: #ffffff;
