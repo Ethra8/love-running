@@ -96,7 +96,7 @@ nav {
 
 /* Main content*/
 main {
-    background-color: red;
+    background-color: cadetblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     /*pushes content down, due to the fixed nav header*/
@@ -109,7 +109,7 @@ footer {
 }
 
 
-/* Media query: TABLETS & lager (768px and up) */
+/* Media query: TABLETS & larger (768px and up) */
 @media screen and (min-width: 768px) {
 
     /*header*/
@@ -145,5 +145,14 @@ footer {
     main {
         /*push main content down to accomodate larger header*/
         margin-top: 79px;
+    }
+}
+
+
+/* Media query: LAPTOPS & larger (992px and up) */
+@media screen and (min-width: 992px) {
+
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
