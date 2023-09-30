@@ -22,12 +22,18 @@ body {
 /* Header*/
 header {
     background-color: #ffffff;
-    padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
+    padding: 0 1rem;
     /* box-shadow properties- 1st: positive displays shadow on the rights, negative values to the left; 2nd: positve values below element, negative above element; 3rd: blur, dtermines the density*/
     box-shadow: 0 2px 2px #3a3a3a;
+    /*makes checkbox display next to h1 logo*/
+    display: flex;
+    /*add space between elements*/
+    justify-content: space-between;
+    /* all elements align the same vertically*/
+    align-items: baseline;
 }
 
 header a {
@@ -42,13 +48,60 @@ h1 {
     /*letter spacing provides 'breathing space' between the letters */
     letter-spacing: 2px;
     color: #252525;
+    margin-bottom: 0;
 }
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+#menu li {
+    margin-bottom: 1em;
+    padding: 0 1rem;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    /* sets nav position just on bottom of parent element - if set to 0% would position it on top of parent element*/
+    top: 100%;
+}
+
+/* Nav Toggle : when checkbox is clicked (checked) */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+/* hides de checkbox, as the label (icon) also toggles the menu*/
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 
 /* Main content*/
 main {
-    background-color: blueviolet;
+    background-color: red;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    /*pushes content down, due to the fixed nav header*/
+    margin-top: 47px;
 }
 
 /* Footer */
