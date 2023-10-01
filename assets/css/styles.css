@@ -229,7 +229,7 @@ main {
 }
 
 #signup {
-    background: url('./assets/images/signup-image.webp') no-repeat center center;
+    background: url('../images/signup-image.webp') no-repeat center center;
     background-position: 75%;
     flex-grow: 1;
     min-height: 100vh;
