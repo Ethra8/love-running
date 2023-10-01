@@ -246,13 +246,15 @@ main {
     padding: 30px;
 }
 
-#signup-form input[type=text] {
+#signup-form input[type=text],
+#signup-form input[type=email] {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #ffffff;
     padding: 0 5px;
     height: 25px;
     width: 100%;
     margin: 5px auto 20px;
+    color: #fafafa;
 }
 
 #radio-buttons {
@@ -384,7 +386,8 @@ main {
         max-width: 400px;
     }
 
-    #signup-form input[type=text]:hover {
+    #signup-form input[type=text]:hover,
+    #signup-form input[type=email]:hover {
         border-color: #f16c6b;
     }
 
