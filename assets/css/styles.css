@@ -178,6 +178,20 @@ main {
     justify-content: center;
 }
 
+
+/* Gallery */
+#photos img {
+    /*to prevent overflow of the images*/
+    width: 100%;
+    /*makes alt text visible if img is broken*/
+    line-height: 1rem;
+}
+
+#photos {
+    /*takes out space between img, as default are treated as text, removes a white line showing*/
+    line-height: 0;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
