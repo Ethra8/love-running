@@ -192,22 +192,6 @@ main {
     line-height: 0;
 }
 
-/* Footer */
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-/* icons are set inside i elements by fontawesome*/
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
-}
 
 /* Meet-up section */
 #times {
@@ -233,6 +217,33 @@ main {
 #times h3,
 #times h3>i {
     color: #fafafa;
+}
+
+/* Footer */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/* icons are set inside i elements by fontawesome*/
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+
+/* Media query for Large Phones or landscape position*/
+@media screen and (min-width: 576px) {
+    #photos {
+        /*organizes grid "mason grid" distributes images depending of their height, to form visually appealing grid*/
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 
@@ -302,6 +313,12 @@ main {
         align-self: flex-start;
     }
 
+    /* Gallery */
+    #photos {
+        /*organizes grid "mason grid" distributes images depending of their height, to form visually appealing grid*/
+        column-count: 3;
+        column-gap: 0;
+    }
 
 }
 
@@ -311,6 +328,13 @@ main {
 
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        /*organizes grid "mason grid" distributes images depending of their height, to form visually appealing grid*/
+        column-count: 4;
+        column-gap: 0;
     }
 }
 
